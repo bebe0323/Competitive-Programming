@@ -6,8 +6,6 @@ public:
     #define ff first
     #define ss second
     int total_cost[200][200];
-    priority_queue<pair<int,int>> pq;
-    int visited[200];
     long long minimumCost(string source, string target, vector<char>& original, vector<char>& changed, vector<int>& cost) {
         for (int i = 0; i < original.size(); i++) {
             if (total_cost[original[i]][changed[i]] == 0) {
