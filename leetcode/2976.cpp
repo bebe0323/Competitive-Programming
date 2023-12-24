@@ -16,6 +16,7 @@ public:
                 total_cost[original[i]][changed[i]] = min(cost[i], total_cost[original[i]][changed[i]]);
             }
         }
+        // Floyd–Warshall algorithm
         for (int k = 'a'; k <= 'z'; k++) {
             for (int i = 'a'; i <= 'z'; i++) {
                 for (int j = 'a'; j <= 'z'; j++) {
